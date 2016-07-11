@@ -1,0 +1,23 @@
+Tool4Radka Documentation
+
+User Manual
+
+1. Open Tool by running Tool4Radka.bat
+2. Report should contain 2 rows. See example in examples/Proper_Excel_format_report.xls
+3. Click button *Open XLS Report* and  Select Excel report in 2003 Office format (xls) from file system
+4. Application will open selected Excel. You can check if ID is present in every 4th line of 2nd row
+5. Please add new row if it is missing and ID set to value "null"
+6. Once xls is in proper format click button *Create GA Urls* which will create file in directory
+output with a timestamp and suffix _GoogleAnalytics.txt 
+7. Software will open this links in your predefined editor for suffix .txt
+This concludes transformation step. You can also send these values to Google Analytics if content
+of query parameters is correct. Check if cid contains proper values (there should be only number with one "." ) 
+8. Click button *Open GA Urls Button* to load data you wish to send to Google Analytics (there should be previously created file in output directory)
+9. Click *Send report to GA* button to send data to Google analytics
+10. Application will inform you about output of this operation. If there has been some errors the report file will be opened and all POST operations with response code 200 can be considered received by Google Analytics. All other can be posted separately in tools like Postman (extension of Chrome browser)
+
+Trouble-shooting
+1. Send e-mail to tomas.bajus@gmx.com in case there has been some issues with following content:
+* Use-case description 
+* xls file 
+* Tool4Radka.log
